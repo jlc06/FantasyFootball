@@ -12,12 +12,12 @@ Link to google sheet: https://docs.google.com/spreadsheets/d/1PD-MFUa4zdcL-9qaW1
 ### prodata(year, pids)
   - Description: Scrapes, cleans, and transforms statistics from Pro-Football-Reference website
   - Arguments: year (integer), pids (static file of unique player ids)
-  - Additional Notes: Flags when a player has played for more than one team and will scrape information from individual player pages to have specific statistics fro all teams they've played for. The Insert_row_ function is used here.
+  - Additional Notes: Flags when a player has played for more than one team and will scrape information from individual player pages to have specific statistics for all teams they've played for. The Insert_row_ function is used here.
 ### weeklydata(year, start, end, pids)
   - Description: Scrapes and cleans weekly fantasy scores from the Fantasy Pros website
   - Arguments: year (integer), start (integer, week to start scrape), end (integer, week to end scrape), pids (static file of unique player ids)
 ### intscrape(week, pids)
-  - Description: Scrapes interception data from the Fantasy Pros website to bridge gape between Fantasy Pros weekly scores and ESPN scoring (-1 vs -2 per interception)
+  - Description: Scrapes interception data from the Fantasy Pros website to bridge the gap between Fantasy Pros weekly scores and ESPN scoring (-1 vs -2 per interception)
   - Arguments: week (integer, the most recent played week of the season), pids (static file of unique player ids)
 ### ffballleague(id, yr, s2, sw, week, pids)
   - Description: Pulls fantasy football league data from ESPN API
