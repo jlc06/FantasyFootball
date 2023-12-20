@@ -6,10 +6,10 @@ The "FFBallWebScrape.ipynb" file contains seven different functions used to scra
 Link to google sheet: https://docs.google.com/spreadsheets/d/1PD-MFUa4zdcL-9qaW1fuJ9MFvG5hyOQTR3NzNYrc2jU/edit?usp=sharing
 
 ## Function Descriptions
-Insert_row_
+### Insert_row_
   - Description: Inserts new rows into existing dataframe
   - Arguments: Executed within prodata function
-prodata(year, pids)
+### prodata(year, pids)
   - Description: Scrapes, cleans, and transforms statistics from Pro-Football-Reference website
   - Arguments: year (integer), pids (static file of unique player ids)
   - Additional Notes: Flags when a player has played for more than one team and will scrape information from individual player pages to have specific statistics fro all teams they've played for. The Insert_row_ function is used here.
